@@ -151,30 +151,28 @@
 			
 		<h1>Use Case Descriptions</h1>
 		
-		<h3>Use Case: Verify member</h3>
-		<h3>Context: A member intends to receive services from ChocAn and must be validated.</h3>
-		<h3>Actors: Provider, ChocAn Data Center, ACME</h3>
-		<h3>Main Success Scenario:</h3>
-		<ol start="1">
-  			<li>When a member wants to receive health care services, they first go to the ChocAn center.</li>
-  			<li>Then, the member needs to go up to a provider and be verified as a good-status member.</li>
-  			<li>The member hands his or her card to the provider.</li>
-			<li>The provider slides the card through the card reader on the terminal, to read the magnetic strip that encodes the member’s name and nine-digit member number.</li>
-  			<li>The terminal dials to the ChocAn Data Center.</li>
-  			<li>The ChocAn Data Center computer verifies the member number.</li>
-  			<li>     6.1 If number is valid, the word VALIDATED appears on the one-line display.</li>
-  			<li>The provider hands the card back to the member.</li>
-  			<li>The member can now receive a health care service from that provider.</li>
-		</ol>
-		<h3>Extensions:</h3>
-		<ol>
-  			<li>The member number is not valid.</li>
-  			<li>     6a.1 The ChocAn Data Center sends to the computer terminal that the member cannot be verified.</li>
-			<li>     6a.2 The computer terminal displays the reason for the provider either as INVALID NUMBER or MEMBER SUSPENDED.</li>
-			<li>     6a.3 The provider informs the member that verification did not go through and the reason.</li>
-  			<li>          6a.3a If it is MEMBER SUSPENDED, the member can choose to pay off the owed membership fees, send that information to ACME to update the record of fees, and reinstate the suspended member to be validated.</li>
-			<li>          6a.3b If it is INVALID NUMBER, the member should go through the process of becoming an active member and receive another card.</li>
-		</ol>
+		<pre>
+	Use Case: Verify member
+	Context: A member intends to receive services from ChocAn and must be validated.
+	Actors: Provider, ChocAn Data Center, ACME
+	Main Success Scenario:
+		1.	When a member wants to receive health care services, they first go to the ChocAn center.
+		2.	Then, the member needs to go up to a provider and be verified as a good-status member.
+		3.	The member hands his or her card to the provider.
+		4.	The provider slides the card through the card reader on the terminal, to read the magnetic strip that encodes the member’s name and nine-digit member number.
+		5.	The terminal dials to the ChocAn Data Center.
+		6.	The ChocAn Data Center computer verifies the member number.
+			6.1	If number is valid, the word VALIDATED appears on the one-line display.
+		7.	The provider hands the card back to the member.
+		8.	The member can now receive a health care service from that provider.
+	Extensions:
+		6a. The member number is not valid.
+			6a.1. The ChocAn Data Center sends to the computer terminal that the member cannot be verified.
+			6a.2. The computer terminal displays the reason for the provider either as INVALID NUMBER or MEMBER SUSPENDED.
+			6a.3. The provider informs the member that verification did not go through and the reason.
+				6a.3a. If it is MEMBER SUSPENDED, the member can choose to pay off the owed membership fees, which would send that information to ACME to update the record of fees. Then, ACME would reinstate them as a regular member and they would be validated.
+				6a.3b. If it is INVALID NUMBER, the member should go through the process of becoming an active member and receive another card.
+		</pre>
 		<br>
 		
 		<pre>
