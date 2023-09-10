@@ -213,45 +213,29 @@
 		<br>
 		
 		<pre>
-Use Case: Request provider directory 
-
-Context: The provider requests the list of service codes called the provider directory 
-
-Actors: Provider 
-
-Main Success Scenario:  
-
-	1. A provider sends a request for the provider directory. 
-
-	2. The provider directory is sent to the provider’s email as an attachment. 
+	Use Case: Request provider directory 
+	Context: The provider requests the list of service codes called the provider directory 
+	Actors: Provider 
+	Main Success Scenario:  
+		1. A provider sends a request for the provider directory. 
+		2. The provider directory is sent to the provider’s email as an attachment. 
 		</pre>
 		<pre> 
-Use Case: Run main accounting procedure 
-
-Context: The main accounting procedure is activated to send out financial reports every week 
-
-Actors: ChocAn Data Center, ChocAn Manager, Banking Computer 
-
-Main Success Scenario:
-
-	1. At midnight on Friday, the main accounting procedure is activated. 
-
-	2. Each member who has been provided a service that week is sent a report through email that includes a list of every service they received that week ordered
-	   by the date of the service.  
-
-		2a. This same report can be sent again at any time by a ChocAn Manager.  
-
-	3. Each provider that provided a service that week is sent a report, through email, of the services they provided (including all information from their
-	   provider form from billing), the total number of services they provided, and the total fees that they charged.   
-
-		3a. This report is available at any time after this and can be sent by a ChocAn manager.  
-
-	4. The ChocAn Manager receives a report of all of the provider reports as well as the total number providers who had consultations, the number of
-	   appointments, and the total fees collected.  
-
-	5. A record of the Electronic Funds Transfer (EFT) data is written to the disk at the ChocAn data center. 
-
-	6. The EFT data is verified as accurate by the banking computer to ensure that each provider receives the correct amount of money.  
+	Use Case: Run main accounting procedure 
+	Context: The main accounting procedure is activated to send out financial reports every week 
+	Actors: ChocAn Data Center, ChocAn Manager, Banking Computer 
+	Main Success Scenario:
+		1. At midnight on Friday, the main accounting procedure is activated. 
+		2. Each member who has been provided a service that week is sent a report through email that includes a list of every service they received that week ordered
+	       by the date of the service.  
+			2a. This same report can be sent again at any time by a ChocAn Manager.  
+		3. Each provider that provided a service that week is sent a report, through email, of the services they provided (including all information from their
+	       provider form from billing), the total number of services they provided, and the total fees that they charged.   
+			3a. This report is available at any time after this and can be sent by a ChocAn manager.  
+		4. The ChocAn Manager receives a report of all of the provider reports as well as the total number providers who had consultations, the number of
+	   	   appointments, and the total fees collected.  
+		5. A record of the Electronic Funds Transfer (EFT) data is written to the disk at the ChocAn data center. 
+		6. The EFT data is verified as accurate by the banking computer to ensure that each provider receives the correct amount of money.  
 		</pre>
 		
 
